@@ -22,14 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
         <ToastProvider/>
         <ModalProvider/>
         <ToastProvider/>
         <Navbar />
         {children}
         <Footer />
-        </ThemeProvider>
         </body>
     </html>
   )
